@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./animations.css" />
+    <link rel="stylesheet" href="./responsive.css"/>
+   
+
+    <title>Previsão Do Tempo</title>
+  </head>
+  <body>
+    
+    <section class="container-main">
+      
+      
+      <section class="container-input">
+       
+       
+        <input class="input-cidade" placeholder="Digite o nome da cidade" value="" />
+        <button class="button" onclick="Cliquenobotao()"><img src="/assets/search.png"/></button>
+      </section>
+      
+      <section class="container-cidade">
+          <h1 class="previsao"></h1>
+
+
+           <section class="container-descricao">
+          
+            <img src="./assets/w-cloud.png" />
+            <p class="speed">Vento:</p>
+            <img src="./assets/w-cloud.png" />
+            <p class="deg">Direção:</p>
+
+            <img src="./assets/w-rain.png" />
+            <p class="rain">Chuva:</p>
+            <img src="./assets/umidade.png" />
+            <p class="umidade">Umidade:</p>
+            
+          
+          
+          </section>
+
+      </section>
+
+      
+
+        <!-- Sessao do card do tempo -->
+        <section class="container-previsao">
+          <p class="badge">HOJE</p>
+          <img
+            class="icon-desc"
+            src="https://openweathermap.org/img/wn/04n@4x.png"
+          />
+          <p class="descricao"></p>
+          <p class="tempo">29 °C</p>
+          <section class="container-max-min">
+            <p class="min">Min: 26 °C</p>
+            <p class="max">Max: 29 °C</p>
+          </section>
+          </section>
+          <!-- Sessao do card do tempo -->
+
+          <div class="chuva"></div>
+          
+        
+
+        <section id="items">
+          <p class="tempo"></p>
+          <p class="descricao"></p>
+          <p class="umidade"></p>
+        </section>
+
+       
+      </section>
+
+      <p class="descricao"></p>
+          <p class="umidade"></p>
+    </section>
+     
+  </body>
+  
+  <script src="/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="./animantions.js" defer></script>
+  
+</html>
